@@ -6,15 +6,16 @@ header {
 }
 
 .heading {
-    padding-top: 80px;
+    padding-top: 100px;
+    margin: 0 -12px;
+    background-color: rgb(187, 187, 192);
 }
 
-.logo {
+#logo {
     background: url("../assets/profile.jpg") center no-repeat;
-    height: 300px;
+    height: 340px;
     background-size: cover;
-    margin: auto;
-    max-width: 440px;
+    margin: 0;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -28,27 +29,33 @@ header {
     font-weight: 300;
     letter-spacing: 1px;
     word-spacing: 3px;
-    text-indent: 20px;
+    text-indent: 60px;
 }
 
 .title {
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     font-weight: 400;
-    text-indent: 24px;
+    text-indent: 62px;
     background-color: rgb(51, 51, 51);
     color: rgb(240, 250, 250);
-    height: 240px;
+    height: 160px;
+    padding-top: 10px;
+    margin: 0;
 }
 
 #nav {
     margin: 0;
 }
 
+.navLink {
+    display: inline-block;
+}
+
 #nav>li {
     margin: 0;
     font-size: 16px;
-    height: 120px;
+    height: 100px;
     padding: 0;
     text-align: center;
 }
@@ -99,8 +106,6 @@ header {
     background-color: rgb(146, 146, 146);
 }
 
-
-
 .hvr-shutter-out-vertical:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
@@ -108,61 +113,50 @@ header {
 
 /* Media Queries */
 @media screen and (max-width: 420px) {
-    .logo {
+    #logo {
         margin-top: 30px;
         margin-bottom: -70px;
         border-radius: 0;
         height: 400px;
     }
-
-    #nav .active {
-        border-bottom: solid 16px rgba(0, 0, 0, 0.2);
-    }
 }
 
 @media screen and (min-width: 421px) and (max-width: 767px) {
-    .logo {
-        margin-top: 40px;
-        margin-bottom: -60px;
+    #logo {
+        margin: 40px auto -60px auto;
         border-radius: 6px;
         height: 440px;
-    }
-
-    #nav .active {
-        border-bottom: solid 16px rgba(0, 0, 0, 0.2);
+        width: 70%;
     }
 }
 
 @media screen and (min-width: 768px) {
     .heading {
-        height: 23vh;
+        height: 240px;
     }
 
     .name {
         font-family: 'Spartan', sans-serif;
         margin-top: -240px;
-        padding-top: 20vh;
-        font-weight: 300;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-        text-indent: 30px;
+        padding-top: 180px;
     }
 
     .title {
+        padding-top: 10px;
         font-family: 'Raleway', sans-serif;
         font-size: x-large;
         font-weight: 400;
-        text-indent: 34px;
+        height: 240px;
     }
 
-    #nav {
-        margin: 0;
-        height: 10vh;
+    #nav .prev {
+        width: 16.666666%;
+        transition: all .5s ease-in-out;
     }
-
-    #nav li {
-        margin: 0;
-        height: 10vh;
+    
+    #nav .active {
+        transition: all .5s ease-in-out;
+        width: 33.333333%;
     }
 
     .hvr-shutter-out-vertical:before {
@@ -172,7 +166,7 @@ header {
 }
 
 @media screen and (max-height: 767px) and (min-width: 768px) {
-    .logo {
+    #logo {
         height: 260px;
     }
 

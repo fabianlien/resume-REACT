@@ -4,13 +4,13 @@ import Contact from "./pages/Contact";
 import Github from "./pages/Github";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Container from "react-bootstrap/Container";
 
 function App() {
   return (
-    <>
+    <Container fluid="xl" className="p-0">
       <Nav />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
         <Route exact path= "/github" element={<Github />} />
       </Routes>
       <Footer />
-    </>
+    </Container>
   );
 }
 
