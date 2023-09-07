@@ -39,10 +39,10 @@ const Nav = () => {
         <div className="row no-gutters">
           <div className="col">
             <ul id={styles.nav} className="list-inline">
-              <NavButton content="home" icon={faHouseUser} isActive={true} setActive={setActive}/>
-              <NavButton content="resume" icon={faGraduationCap} setActive={setActive}/>
-              <NavButton content="contact" icon={faAddressBook} setActive={setActive}/>
-              <NavButton content="github" icon={faGithub} setActive={setActive}/>
+              <NavButton content="home" icon={faHouseUser} isActive={true} setActive={setActive} />
+              <NavButton content="resume" icon={faGraduationCap} setActive={setActive} />
+              <NavButton content="contact" icon={faAddressBook} setActive={setActive} />
+              <NavButton content="github" icon={faGithub} setActive={setActive} />
               {downloadButton}
             </ul>
           </div>

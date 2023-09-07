@@ -1,0 +1,62 @@
+footer {
+    color: rgb(240, 250, 250);
+    background-color: rgb(51, 51, 51);
+    min-height: 120px;
+    text-align: center;
+}
+
+footer h5 {
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+footer p {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.footerSmall {
+    font-size: small;
+    padding: 0 8px;
+}
+
+.cvPDF .pdfIcon {
+    font-size: 24px;
+    color: rgb(133, 132, 125);
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.cvPDF a {
+    color: unset;
+}
+
+.cvPDF .pdfIcon:hover {
+    color: rgb(132, 189, 179);
+}
+
+.socialLinks {
+    margin-top: 15px;
+}
+
+footer li a {
+    color: rgb(240, 250, 250);
+    font-size: 30px;
+    padding: 8px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+footer li a:hover {
+    color: rgb(122, 82, 122);
+}
