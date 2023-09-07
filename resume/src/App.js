@@ -13,7 +13,7 @@ function App() {
     <Container fluid="xl" className="p-0">
       <Nav />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
         <Route exact path="/resume" element={<Resume />} />
         <Route exact path= "/contact" element={<Contact />} />
         <Route exact path= "/github" element={<Github />} />
