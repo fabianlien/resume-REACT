@@ -30,8 +30,8 @@ const Nav = () => {
     <header className="row">
       <div id={styles.logo} className="col-md-4 p-0" alt="profile image"></div>
       <div className="col-md-8 p-0">
-        <div className="row">
-          <div className={`${styles.heading} col px-0`}>
+        <div className="row m-0">
+          <div className={`${styles.heading} col px-0 m-0`}>
             <h1 className={styles.name}>Fabian Lien</h1>
             <h2 className={styles.title}>Full Stack Developer</h2>
           </div>

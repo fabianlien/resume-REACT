@@ -10,7 +10,7 @@ import Container from "react-bootstrap/Container";
 
 function App() {
   return (
-    <Container fluid="xl" className="p-0">
+    <Container fluid="xxl" className="p-0">
       <Nav />
       <Routes>
         <Route exact path="/" element={<Navigate to="/home" />} />

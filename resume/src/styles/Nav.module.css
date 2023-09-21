@@ -6,14 +6,14 @@ header {
 }
 
 .heading {
-    padding-top: 100px;
+    padding-top: 120px;
     margin: 0 -12px;
     background-color: rgb(187, 187, 192);
 }
 
 #logo {
     background: url("../assets/profile.jpg") center no-repeat;
-    height: 340px;
+    height: 360px;
     background-size: cover;
     margin: 0;
     transition: all .5s ease-in-out;
@@ -33,6 +33,7 @@ header {
 }
 
 .title {
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     font-weight: 400;
@@ -45,7 +46,7 @@ header {
 }
 
 #nav {
-    margin: 0;
+    margin: 0 -0.25px 0 0;
 }
 
 .navLink {
@@ -131,11 +132,6 @@ header {
     background-color: rgb(146, 146, 146);
 }
 
-.hvr-shutter-out-vertical:before {
-    background: rgba(0, 0, 0, 0.2);
-    height: 120px;
-}
-
 /* Media Queries */
 @media screen and (max-width: 420px) {
     #logo {
@@ -174,6 +170,10 @@ header {
         height: 240px;
     }
 
+    #nav {
+        padding-top: 20px;
+    }
+
     #nav .prev {
         width: 16.666666%;
         transition: all .5s ease-in-out;
@@ -206,5 +206,45 @@ header {
 
     #nav li {
         height: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #logo {
+        height: 480px;
+    }
+
+    .title {
+        height: 360px;
+    }
+
+    .name {
+        font-size: 300%;
+    }
+
+    .title {
+        font-size: 175%;
+    }
+
+    #nav {
+        padding-top: 120px;
+    }
+
+    #nav li {
+        height: 120px;
+    }
+
+    #nav li * {
+        font-size: larger;
+        height: 120px;
+    }
+
+    #nav>li>*>:first-child {
+        padding-top: 32px;
+        height: 30px;
+    }
+
+    #nav .download:hover {
+        border-bottom-width: 120px;
     }
 }
