@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from '../styles/PersonalInfo.module.css'
+import styles from '../../styles/PersonalInfo.module.css'
 import PersonalInfoItem from './PersonalInfoItem'
-import useWindowDimensions from '../hooks/useWindowDimensions'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 const PersonalInfo = () => {
     const { width } = useWindowDimensions();

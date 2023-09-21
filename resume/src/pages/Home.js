@@ -1,6 +1,6 @@
 import React from 'react'
-import PersonalInfo from '../components/PersonalInfo'
-import About from '../components/About'
+import PersonalInfo from '../components/home/PersonalInfo'
+import About from '../components/home/About'
 import useWindowDimensions from '../hooks/useWindowDimensions'
 
 const Home = () => {

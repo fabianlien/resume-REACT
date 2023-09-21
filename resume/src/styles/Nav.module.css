@@ -12,7 +12,7 @@ header {
 }
 
 #logo {
-    background: url("../assets/profile.jpg") center no-repeat;
+    background: url("../assets/images/profile.jpg") center no-repeat;
     height: 360px;
     background-size: cover;
     margin: 0;

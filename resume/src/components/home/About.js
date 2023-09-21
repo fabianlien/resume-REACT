@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/About.module.css';
+import styles from '../../styles/About.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestion, faThumbsUp, faPersonWalkingLuggage } from '@fortawesome/free-solid-svg-icons';
 
