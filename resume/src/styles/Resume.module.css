@@ -1,4 +1,5 @@
 .resume {
+    padding: 30px;
     background-color: rgb(75, 185, 167)
 }
 
@@ -16,6 +17,7 @@ h3 {
 }
 
 .workHistory {
+    padding: 30px;
     background-color: rgb(95, 94, 90);
     color: rgb(240, 250, 250);
 }
@@ -74,7 +76,7 @@ h3 {
     color: rgb(216, 129, 48)
 }
 
-.icon-box {
+.iconBox {
     margin-bottom: 30px;
 }
 
@@ -170,11 +172,11 @@ h3 {
 .languageBox {
     font-size: large;
     font-weight: 600;
+    text-align: center;
     letter-spacing: 2px;
-    max-width: fit-content;
+    min-width: fit-content;
     padding: 10px;
     margin: 10px auto;
-    margin-left: min(10px);
     font-family: 'Raleway', sans-serif;
     color: rgb(75, 185, 167);
     border: solid 2px rgb(75, 185, 167);
@@ -192,6 +194,7 @@ h3 {
 }
 
 .credentials {
+    padding: 30px;
     background-color: rgb(132, 189, 179);
 }
 
@@ -204,11 +207,9 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-    h3 {
-        margin-top: 5vh;
-    }
-
-    #credentials {
-        margin-top: 5vh;
+    .sectionHeading {
+        margin-top: 60px;
+        letter-spacing: 1px;
+        font-size: 200%;
     }
 }

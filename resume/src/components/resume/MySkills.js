@@ -6,11 +6,12 @@ import { faBootstrap, faReact } from '@fortawesome/free-brands-svg-icons';
 import Languages from './Languages';
 
 const MySkills = () => {
+
     return (
         <>
             <div className="row">
                 <div className="col">
-                    <h3>My skills</h3>
+                    <h3 className={styles.sectionHeading}>My skills</h3>
                 </div>
             </div>
             <div className="row">
@@ -26,7 +27,7 @@ const MySkills = () => {
                                 solutions. I am proficient with vanilla HTML/CSS/JS, but also an avid user of
                                 frontend libraries like React.
                             </p>
-                            <div className="row icon-box">
+                            <div className={`${styles.iconBox} row`}>
                                 <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"
                                     id={styles.bootstrapLink} className="col pr-0">
                                     <FontAwesomeIcon icon={faBootstrap}
@@ -47,7 +48,7 @@ const MySkills = () => {
                 </div>
                 <div className="col-10 offset-1 offset-sm-0 col-sm-6">
                     <div className="row">
-                        <div className="d-none d-sm-block  col-sm-2 col-lg-1">
+                        <div className="d-none d-sm-block col-sm-2 col-lg-1">
                             <FontAwesomeIcon icon={faGears} area-hidden="true" />
                         </div>
                         <div className="col-sm-10">
@@ -57,7 +58,7 @@ const MySkills = () => {
                                 document-based data. I use Django in conjunction with PostgreSQL to process and
                                 present information.
                             </p>
-                            <div className="row icon-box">
+                            <div className={`${styles.iconBox} row`}>
                                 <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer" className="col pr-0">
                                     <svg id={styles.djangoLogo} width="36" height="36" viewBox="0 0 256 326"
                                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
@@ -80,7 +81,7 @@ const MySkills = () => {
                     </div>
                 </div>
             </div>
-            <Languages/>
+            <Languages />
         </>
     )
 }

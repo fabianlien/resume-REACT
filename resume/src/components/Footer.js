@@ -10,30 +10,30 @@ const Footer = () => {
     <footer className="row">
         <div className="col-sm-4">
           <h5>About</h5>
-          <p className={`${styles.footerSmall} inline-block`}>
+          <span className={`${styles.footerSmall} inline-block`}>
             Full Stack Web Developer. Experienced in HTML to SQL and everything in between. Capacity for
             structural and design thinking.
-          </p>
+          </span>
         </div>
         <div className="col-sm-4">
           <h5>Social</h5>
-          <p className="inline-block">
+          <span className="inline-block">
             <ul className={`${styles.socialLinks} list-inline`}>
               <FooterLink url="https://www.facebook.com/fabian.lien/" icon={faFacebookSquare} srTag="Facebook"/>
               <FooterLink url="https://www.linkedin.com/in/fabian-lien/" icon={faLinkedin} srTag="Linkedin"/>
               <FooterLink url="https://www.instagram.com/fabianlien/" icon={faInstagramSquare} srTag="Instagram"/>
             </ul>
-          </p>
+          </span>
         </div>
         <div className="col-sm-4">
           <h5>Download</h5>
-          <p className={`${styles.cvPDF} inline-block`}>
+          <span className={`${styles.cvPDF} inline-block`}>
             Need a printable CV? Download a .pdf here.
             <a href="assets/cv/Fabian_Lien_Resume.pdf" target="_blank">
               <FontAwesomeIcon icon={faFileArrowDown} className={styles.pdfIcon} aria-hidden="true"/>
               <span className="sr-only">Download link.</span>
             </a>
-          </p>
+          </span>
         </div>
     </footer>
   )

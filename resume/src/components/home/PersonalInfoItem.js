@@ -5,10 +5,10 @@ const PersonalInfoItem = ({k, val}) => {
   return (
     <div className={styles.personalInfoItem}>
       <div className={styles.key}>
-        <p>{`${k}:`}</p>
+        <span>{`${k}:`}</span>
       </div>
       <div className={styles.value}>
-        <p>{val}</p>
+        <span>{val}</span>
       </div>
     </div>
   )

@@ -8,21 +8,16 @@ import WorkHistory from '../components/resume/WorkHistory';
 const Resume = () => {
   return (
     <div className="row">
-                <div className={styles.resume}>
-                  <MySkills/>    
-                </div>
-                <Credentials/>
-                <div className={`${styles.sectionColumn} ${styles.workHistory} col-md-4`}>
-                    <div className="row">
-                        <div className="col-12">
-                            <h3>Work history</h3>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <WorkHistory/>
-                    </div>
-                </div>
-            </div>
+      <div className={`${styles.resume} p-5`}>
+        <MySkills />
+      </div>
+      <Credentials />
+      <div className={`${styles.sectionColumn} ${styles.workHistory} col-md-4`}>
+        <div className="row">
+          <WorkHistory />
+        </div>
+      </div>
+    </div>
   )
 }
 
