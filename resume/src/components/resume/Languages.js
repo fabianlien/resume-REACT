@@ -79,7 +79,7 @@ const Languages = () => {
 
     return (
         <div className="row">
-            <div className="col-sm-10 offset-sm-1">
+            <div className="col-10 offset-1">
                 <br className="d-none d-lg-block"></br>
                 <h4>Languages</h4>
                 <div id="languageContainer" className="row">

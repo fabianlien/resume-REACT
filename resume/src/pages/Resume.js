@@ -8,7 +8,7 @@ import WorkHistory from '../components/resume/WorkHistory';
 const Resume = () => {
   return (
     <div className="row">
-      <div className={`${styles.resume} p-5`}>
+      <div className={`${styles.resume} p-sm-5`}>
         <MySkills />
       </div>
       <Credentials />
