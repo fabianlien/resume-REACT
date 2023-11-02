@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from '../../styles/PersonalInfo.module.css'
-import PersonalInfoItem from './PersonalInfoItem'
+import styles from '../../styles/InfoItem.module.css'
+import InfoItem from '../InfoItem'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
 
-const PersonalInfo = () => {
+const InfoPersonal = () => {
     const { width } = useWindowDimensions();
 
     const skillsList = <ul>
@@ -30,13 +30,13 @@ const PersonalInfo = () => {
                 <div className="col-12">
                     <h3 id={styles.personalInfoHeading}>Personal info</h3>
                 </div>
-                <PersonalInfoItem k="Name" val="Fabian Lien" />
-                <PersonalInfoItem k="Date of birth" val="1994 - 06 - 13" />
-                <PersonalInfoItem k={(width < 960) & (width > 767) ? ("Nation- ality"): ("Nationality") } val="Swedish" />
-                <PersonalInfoItem k="Skills" val={skillsList} />
+                <InfoItem k="Name" val="Fabian Lien" />
+                <InfoItem k="Date of birth" val="1994 - 06 - 13" />
+                <InfoItem k={(width < 960) & (width > 767) ? ("Nation- ality"): ("Nationality") } val="Swedish" />
+                <InfoItem k="Skills" val={skillsList} />
             </div>
         </div>
     )
 }
 
-export default PersonalInfo
+export default InfoPersonal

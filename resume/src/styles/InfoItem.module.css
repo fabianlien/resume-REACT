@@ -44,6 +44,28 @@
     width: 47%;
 }
 
+.personalInfoItem .contactInfo.key {
+    width: 35%;
+}
+
+.personalInfoItem .contactInfo.value {
+    width: 60%;
+    overflow-wrap: break-word;
+}
+
+.personalInfoItem .value a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.personalInfoItem .value a:hover {
+    color: rgb(216, 129, 48);
+}
+
 .personalInfoItem .value ul {
     margin-left: -90px;
     color: #a9a9a9;
@@ -70,6 +92,11 @@ p {
     .personalInfoItem .value ul {
         padding-top: 30px;
         margin-left: -120px;
+    }
+
+    .personalInfoItem:last-of-type .contactInfo.value {
+        width: 100%;
+        display: block;
     }
 }
 

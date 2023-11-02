@@ -1,5 +1,5 @@
 import React from 'react'
-import PersonalInfo from '../components/home/PersonalInfo'
+import InfoPersonal from '../components/home/InfoPersonal'
 import About from '../components/home/About'
 import useWindowDimensions from '../hooks/useWindowDimensions'
 
@@ -10,13 +10,13 @@ const Home = () => {
     <div className="row">
       {(width > 767) ? (
         <>
-          <PersonalInfo/>
+          <InfoPersonal/>
           <About />
         </>
       ) : (
         <>
           <About />
-          <PersonalInfo />
+          <InfoPersonal />
         </>
       )}
 
